@@ -1,0 +1,194 @@
+.theme-btn-primary {
+    background-color: #eae9ce;
+    color: #006837;
+    border-radius: 13px;
+    font-size: 15px;
+    font-family: 'Loubag';
+    padding: 16px 36px;
+}
+
+.theme-btn-primary:hover {
+    background-color: #eae9ce;
+    color: #006837;
+    cursor: not-allowed;
+}
+
+.theme-btn-primary:first-child:active {
+    background-color: #eae9ce;
+    color: #006837;
+    border-color: transparent;
+}
+
+.hover-underline:hover {
+    color: rgb(#eae9ce);
+    text-decoration: underline !important;
+    text-underline-offset: .3rem;
+}
+
+.text-white-1 {
+    color: #eae9ce;
+}
+
+.text-white-light {
+    color: #EAE9CEBF;
+}
+
+.text-green {
+    color: #006837;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-pink {
+    color: #ff66c4;
+}
+
+.text-pink-1 {
+    color: #f591c5;
+}
+
+.text-loubag {
+    font-family: 'Loubag';
+}
+
+.text-assistant {
+    font-family: 'Assistant';
+}
+
+.text-agrandir {
+    font-family: 'Agrandir';
+}
+
+.fs-48 {
+    font-size: 48px;
+    font-size: 3rem;
+}
+
+.fs-22 {
+    font-size: 22px;
+    font-size: 1.375rem;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-18 {
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+.bg-theme-green {
+    background-color: #006837;
+}
+
+.bg-white-1 {
+    background-color: #eae9ce;
+}
+
+.bg-pink {
+    background-color: #ff66c4;
+}
+
+.mx-w-910 {
+    max-width: 910px;
+}
+
+.mx-w-694 {
+    max-width: 694px;
+}
+
+.mx-w-471 {
+    max-width: 471px;
+}
+
+.mx-w-404 {
+    max-width: 404px;
+}
+
+.mx-w-340 {
+    max-width: 340px;
+}
+
+.mx-w-325 {
+    max-width: 325px;
+}
+
+.mx-w-305 {
+    max-width: 305px;
+}
+
+.mx-w-280 {
+    max-width: 280px;
+}
+
+.mx-w-225 {
+    max-width: 225px;
+}
+
+.w-90 {
+    width: 90px;
+}
+
+.w-44 {
+    width: 44px;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.bordert-white-light {
+    border-top: 1px solid #EAE9CEBF;
+}
+
+.border-3-black {
+    border: 3px solid #000;
+}
+
+.border-2-white {
+    border: 2px solid #eae9ce;
+}
+
+.border-bottom-green {
+    border-bottom: 1px solid #006837;
+}
+
+.border-right-trans {
+    border-right: 1px solid #ffffff40;
+}
+
+.border-top-trans {
+    border-top: 1px solid #ffffff40;
+}
+
+.transform-none {
+    transform: none !important;
+}
+
+.rounded-20 {
+    border-radius: 20px;
+}
+
+.lh-22 {
+    line-height: 22px;
+}
+
+.box-shadow-black {
+    box-shadow: #0000008f -1px 4px 12px 5px;
+}
+
+.letter-spacing-0-6 {
+    letter-spacing: 0.6px;
+}
+
+.top-17 {
+    top: 17px;
+}
+
+.px-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}

@@ -1,0 +1,95 @@
+@media (max-width: 991.98px) {
+    .border-mxlg-0 {
+        border: 0;
+    }
+
+    .mx-w-404 {
+        max-width: none;
+    }
+
+    footer .email-field {
+        max-width: 480px;
+    }
+
+    .border-custom-white {
+        border-right: 1px solid #fff;
+    }
+
+    .call-gmail {
+        max-width: 479px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    html {
+        font-size: 87.5%;
+        /* 14px */
+    }
+
+    .digicam-era-section button {
+        width: 30px;
+        height: 30px;
+    }
+
+    #footer-dropdown .dropdown-menu {
+        transform: none !important;
+        inset: 140px 0 0 0 !important;
+        position: fixed !important;
+        width: 100%;
+    }
+
+    footer .dropdown-item .currency {
+        opacity: 1;
+    }
+
+    footer .dropdown-menu .countries-list {
+        max-height: 327px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .icon-container {
+        width: 58px;
+        justify-content: center;
+    }
+
+    .w-mx-sm-100 {
+        width: 100% !important;
+    }
+
+    .border-custom-white {
+        border-right: 0;
+    }
+
+    .fs-48 {
+        font-size: 2.9rem;
+    }
+}
+
+@media (max-width: 479px) {
+    .cameras-slider-section .swap-slider-track>* {
+        width: 100%;
+    }
+
+    .digicam-era-section .swap-slider-track>* {
+        width: 100%;
+    }
+
+    .px-40 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .digicam-era-section .prev-btn {
+        transform: translate(-50%, -50%);
+    }
+
+    .digicam-era-section .next-btn {
+        transform: translate(50%, -50%);
+    }
+
+    .icon-heart {
+        width: 43px;
+    }
+}
