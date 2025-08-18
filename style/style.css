@@ -1,5 +1,5 @@
 body {
-    font-family: 'Agrandir';
+    font-family: 'Agrandir-Regular';
     color: #EAE9CEBF;
     background-color: #006837;
 }
@@ -171,10 +171,6 @@ footer .dropdown-item:hover .currency {
     color: #EAE9CEBF;
 }
 
-.offcanvas .dropdown-menu .countries-list {
-    max-height: 296px;
-}
-
 header .dropdown-menu .countries-list::-webkit-scrollbar {
     width: 4px;
 }
@@ -189,11 +185,12 @@ header .dropdown-menu .countries-list::-webkit-scrollbar-track {
 }
 
 .nav-link {
-    font-family: 'Agrandir';
+    font-family: 'Agrandir-Regular';
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
     color: #EAE9CEBF;
     padding: 5px 10px;
+    letter-spacing: 0.6px;
 }
 
 .navbar-nav .nav-link.active,

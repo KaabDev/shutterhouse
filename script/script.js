@@ -85,7 +85,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // toggle offcanva mobile country dropdown
+// function toggleOffcanvasBodyOverflow() {
+//   const dropdownMenu = document.getElementById('dropdown-menu');
+//   const offcanvasBody = document.getElementById('offcanvas-body');
+
+//   if (dropdownMenu && !dropdownMenu.classList.contains('show')) {
+//     offcanvasBody.style.overflow = 'auto';
+//   } else if (dropdownMenu && dropdownMenu.classList.contains('show')) {
+//     offcanvasBody.scrollTop = 0;
+//     offcanvasBody.style.overflow = 'hidden';
+//   }
+// }
+
+// toggleOffcanvasBodyOverflow();
+// document.addEventListener('click', toggleOffcanvasBodyOverflow);
+// document.addEventListener('resize', toggleOffcanvasBodyOverflow);
+
+// toggle offcanvas mobile country dropdown (only before md)
+function screenBeforeMd() {
+  return window.matchMedia('(max-width: 767.98px)').matches;
+}
+
 function toggleOffcanvasBodyOverflow() {
+  if (!screenBeforeMd()) {
+    // reset styles when screen >= md
+    const offcanvasBody = document.getElementById('offcanvas-body');
+    if (offcanvasBody) offcanvasBody.style.overflow = '';
+    return;
+  }
+
   const dropdownMenu = document.getElementById('dropdown-menu');
   const offcanvasBody = document.getElementById('offcanvas-body');
 
@@ -97,9 +125,13 @@ function toggleOffcanvasBodyOverflow() {
   }
 }
 
+// Run once on load
 toggleOffcanvasBodyOverflow();
+
+// Events
 document.addEventListener('click', toggleOffcanvasBodyOverflow);
-document.addEventListener('resize', toggleOffcanvasBodyOverflow);
+window.addEventListener('resize', toggleOffcanvasBodyOverflow);
+
 
 
 // disable user to interact with hero cover video and auto play loop muted video
@@ -203,3 +235,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.forEach(el => observer.observe(el));
 });
+

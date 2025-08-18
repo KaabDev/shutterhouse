@@ -5,6 +5,8 @@
     font-size: 15px;
     font-family: 'Loubag';
     padding: 16px 36px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
 }
 
 .theme-btn-primary:hover {
@@ -53,12 +55,24 @@
     font-family: 'Loubag';
 }
 
+.text-loubag-Thin {
+    font-family: 'Loubag-Thin';
+}
+
+.text-loubag-Light {
+    font-family: 'Loubag-Light';
+}
+
 .text-assistant {
     font-family: 'Assistant';
 }
 
 .text-agrandir {
     font-family: 'Agrandir';
+}
+
+.text-Agrandir-Regular {
+    font-family: 'Agrandir-Regular';
 }
 
 .fs-48 {
@@ -170,6 +184,10 @@
 
 .rounded-20 {
     border-radius: 20px;
+}
+
+.rounded-12 {
+    border-radius: 12px;
 }
 
 .lh-22 {

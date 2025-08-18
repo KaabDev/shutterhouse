@@ -19,8 +19,8 @@
 @font-face {
   font-family: 'Loubag';
   src: url('../fonts/loubag/Loubag-Medium.woff2') format('woff2'),
-       url('../fonts/loubag/Loubag-Medium.woff') format('woff'),
-       url('../fonts/loubag/Loubag-Medium.ttf') format('truetype');
+    url('../fonts/loubag/Loubag-Medium.woff') format('woff'),
+    url('../fonts/loubag/Loubag-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -50,4 +50,14 @@
     url('../fonts/agrandir/Agrandir-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Loubag-Thin";
+  src: url("https://cdn.shopify.com/s/files/1/0824/8606/7541/files/Loubag-Thin.ttf?v=1728508360");
+}
+
+@font-face {
+  font-family: "Agrandir-Regular";
+  src: url("https://cdn.shopify.com/s/files/1/0824/8606/7541/files/Agrandir-Regular.otf?v=1728507813");
 }
