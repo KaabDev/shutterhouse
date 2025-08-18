@@ -19,16 +19,73 @@
 
 
 
-
-
     <link rel="stylesheet" href="style/fonts.css">
-    
+
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/utility.css">
     <link rel="stylesheet" href="style/responsive.css">
 </head>
 
 <body>
+
+    <!-- Enter Modal -->
+    <div class="modal" id="welcomeModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static"
+        data-bs-keyboard="false">
+        <div class="modal-dialog modal-fullscreen">
+            <div
+                class="modal-content bg-dark text-light d-flex flex-column justify-content-center align-items-center text-center">
+                <a id="enterSiteBtn" href="#" class="enter-text d-block">
+                    Enter
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- subscribe form Modal -->
+    <div class="modal fix-form-modal px-3" id="mailchimpModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="false"
+        data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-arial text-blond-black">
+                <button aria-label="Close" class="closeModal" data-action="close-mc-modal"
+                    data-dojo-attach-point="modalClose">
+                    <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 14 14">
+                        <path width="8" height="8" d="M1 1 L13 13 M13 1 L1 13" stroke="#414141" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <div class="row g-0">
+                    <!-- Left Content -->
+                    <div class="col-sm-7 mailchimp-left d-flex flex-column justify-content-center
+                    px-4 py-4 py-sm-5 my-2 my-sm-0">
+                        <div class="px-sm-3">
+                            <h4 class="text-center mb-2 mb-sm-3"><strong>Welcome to ShutterHouse.</strong></h4>
+                            <form>
+                                <div class="mb-3 mb-sm-4 d-flex flex-column">
+                                    <label for="emailInput" class="form-label mb-1 fw-bold">Email</label>
+                                    <input type="email" class="email-input w-100 p-1" id="emailInput" placeholder=""
+                                        required>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-subscribe fw-bold text-white rounded-1">Subscribe</button>
+                            </form>
+                            <p class="mt-2 mt-sm-3 pt-1 mb-2 mb-sm-3">
+                                Be the first to find out about deals, fresh stock and more.
+                            </p>
+                            <div class="text-center pt-1">
+                                <img src="assets/mailchimp-logo.svg" alt="Mailchimp Logo" width="125">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="col-sm-5 form-right">
+                        <img class="object-fit-cover w-100 h-100" src="assets/popup-form-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- header + navbar -->
     <header id="header">

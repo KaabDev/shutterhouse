@@ -1,3 +1,61 @@
+
+// show form modal and enter screen if user not visited in last seven days
+document.addEventListener('DOMContentLoaded', () => {
+  const welcomeKey = 'welcomeModalSeenAt';
+  const mailchimpKey = 'mailchimpModalSeenAt';
+
+  const showAgainAfterDays = 7;
+  const msInDay = 24 * 60 * 60 * 1000;
+
+  function shouldShowModal(key) {
+    const lastSeen = localStorage.getItem(key);
+    if (!lastSeen) return true;
+    const lastSeenDate = new Date(parseInt(lastSeen, 10));
+    const now = new Date();
+    const diffDays = (now - lastSeenDate) / msInDay;
+    return diffDays >= showAgainAfterDays;
+  }
+
+  const welcomeModalEl = document.getElementById('welcomeModal');
+  if (welcomeModalEl) {
+    const welcomeModal = new bootstrap.Modal(welcomeModalEl, {});
+    if (shouldShowModal(welcomeKey)) {
+      welcomeModal.show();
+      document.getElementById('enterSiteBtn').addEventListener('click', () => {
+        welcomeModal.hide();
+        localStorage.setItem(welcomeKey, Date.now());
+      });
+    }
+  }
+
+  const mailchimpModalEl = document.getElementById('mailchimpModal');
+  if (mailchimpModalEl) {
+    const mailchimpModal = new bootstrap.Modal(mailchimpModalEl, {
+      backdrop: false,
+      keyboard: false
+    });
+
+    if (shouldShowModal(mailchimpKey)) {
+      setTimeout(() => {
+        mailchimpModal.show();
+
+        document.body.classList.remove('modal-open');
+        document.body.style.overflow = 'auto';
+        document.body.style.paddingRight = '0';
+      }, 3000);
+
+      const closeBtn = document.querySelector('.closeModal');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          mailchimpModal.hide();
+          localStorage.setItem(mailchimpKey, Date.now());
+        });
+      }
+    }
+  }
+});
+
+
 // toggling side menue (Offcanva) for small screens 
 document.addEventListener("DOMContentLoaded", function () {
   const offcanvasEl = document.getElementById("offcanvas");

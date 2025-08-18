@@ -75,6 +75,14 @@
     font-family: 'Agrandir-Regular';
 }
 
+.text-arial {
+    font-family: Arial;
+}
+
+.text-blond-black {
+    color: rgb(36, 28, 21);
+}
+
 .fs-48 {
     font-size: 48px;
     font-size: 3rem;
