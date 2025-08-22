@@ -86,6 +86,11 @@
     .offcanvas .dropdown-menu .countries-list {
         max-height: 296px;
     }
+
+    .px-mxmd-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -131,5 +136,16 @@
 
     .icon-heart {
         width: 43px;
+    }
+}
+
+
+
+/* min-width: media queries */
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg {
+        max-width: 1200px;
     }
 }

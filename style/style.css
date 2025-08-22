@@ -207,6 +207,8 @@ header .dropdown-menu .countries-list::-webkit-scrollbar-track {
     color: #EAE9CEBF;
     padding: 5px 10px;
     letter-spacing: 0.6px;
+    line-height: 28.6px;
+    padding: 5px 10px !important;
 }
 
 .navbar-nav .nav-link.active,
@@ -608,3 +610,4 @@ footer .heading {
     z-index: 2;
     border: none;
 }
+
