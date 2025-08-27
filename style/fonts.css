@@ -61,3 +61,11 @@
   font-family: "Agrandir-Regular";
   src: url("https://cdn.shopify.com/s/files/1/0824/8606/7541/files/Agrandir-Regular.otf?v=1728507813");
 }
+
+
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/assistant/assistant_n7.bf44452348ec8b8efa3aa3068825305886b1c83c.woff2') format('woff2');
+}
